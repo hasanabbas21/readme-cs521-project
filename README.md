@@ -9,20 +9,23 @@ This repository contains set of files that has python code to perform an
 1.  Main program (main_program.py) that manages the user interface of the
  project (some of the options as sample below:)
  
-    1. Run the flight search and save results to the spreadsheet
-    2. Perform a flight search with user driven parameters
-    3. Exit 
-    -->  
-    1. <enter>
-
-     Enter # of iterations and frequency in seconds separated by comma : 1,3600
-
-     Enter the option number you would like to try:\n\n"
-
-    1. Run the flight search and save results to the spreadsheet
-    2. Perform a flight search with user driven parameters
-    3. Exit 
-    -->  
+        "Enter the option number you would like to try:\n\n"
+            "1. Run the flight search and save results to the spreadsheet\n"
+            "2. Perform a flight search with user driven parameters\n"
+            "3. Exit "
+            "-->  ")
+            
+            1. <enter>
+                    
+        Enter # of iterations and frequency in seconds separated by comma : 1
+        ,3600
+        
+        Enter the option number you would like to try:\n\n"
+                    
+           "1. Search flight results by route and date \n"
+           "2. Get the cheapest price by route \n"
+           "3. Exit "
+           "--> "
            
            1. <enter>        
             
@@ -56,17 +59,17 @@ This repository contains set of files that has python code to perform an
         search. Invokes methods to save the results to excel.
         
         :param num_of_times: home many times to perform search
-        :param frequency_in_seconds: how much time between subsequent searches in
-        milliseconds
+        :param frequency_in_sec: how much time between subsequent searches in
+        seconds
         :param dict_of_routes: routes to perform searches on.
         :return: none
         
         SAMPLE RUN:
         
-       1. Run the flight search and save results to the spreadsheet
-       2. Perform a flight search with user driven parameters
-       3. Exit 
-       -->  
+        1. Run the flight search and save results to the spreadsheet
+        2. Perform a flight search with user driven parameters
+        3. exit
+        -->  1
         Enter # of iterations and frequency in seconds separated by comma :1,15
         city name:  munich
         city name:  zurich
