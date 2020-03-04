@@ -9,20 +9,20 @@ This repository contains set of files that has python code to perform an
 1.  Main program (main_program.py) that manages the user interface of the
  project (some of the options as sample below:)
  
-       1. Run the flight search and save results to the spreadsheet
-       2. Perform a flight search with user driven parameters
-       3. Exit 
-       -->  
-       1. <enter>
-                    
-        Enter # of iterations and frequency in seconds separated by comma : 1,3600
-        
-        Enter the option number you would like to try:\n\n"
-                    
-       1. Run the flight search and save results to the spreadsheet
-       2. Perform a flight search with user driven parameters
-       3. Exit 
-       -->  
+    1. Run the flight search and save results to the spreadsheet
+    2. Perform a flight search with user driven parameters
+    3. Exit 
+    -->  
+    1. <enter>
+
+     Enter # of iterations and frequency in seconds separated by comma : 1,3600
+
+     Enter the option number you would like to try:\n\n"
+
+    1. Run the flight search and save results to the spreadsheet
+    2. Perform a flight search with user driven parameters
+    3. Exit 
+    -->  
            
            1. <enter>        
             
