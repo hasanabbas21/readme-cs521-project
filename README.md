@@ -6,7 +6,7 @@ This repository contains set of files that has python code to perform an
    pricing information based on a given route and date or fetch the best
     price from the history of flight search results.
  
-1.  Main program (main_program.py) that manages the user interface of the
+1.  Main program (<b>main_program.py</b>) that manages the user interface of the
  project (some of the options as sample below:)
  
         "Enter the option number you would like to try:\n\n"
@@ -46,7 +46,7 @@ This repository contains set of files that has python code to perform an
                     "\t 5 -  BCN–BOS \n"
                     "--> "
                     4. <enter>
-2.  flights_search.py which has code for iterating the
+2.  <b>flights_search.py</b> which has code for iterating the
  flight search based on a set schedule and frequency and continuously scan
   the flight prices for the routes coded. 
   It also saves the results in a spreadsheet after each search. Multiple
@@ -79,7 +79,7 @@ This repository contains set of files that has python code to perform an
         city name:  barcelona
         Flight Records written to spreadsheet !
 
-3.  FlightRecord.py, a class that represents a record returned by the search
+3.  <b>FlightRecord.py</b>, a class that represents a record returned by the search
  results from google flights.
  
         Attributes:
@@ -102,7 +102,7 @@ This repository contains set of files that has python code to perform an
         3. __repr__
             formatted representation of the flight record response objects
             
-4.  SaveResults.py,
+4.  <b>SaveResults.py</b>,
 
     Class that saves the results from the automated flight search into a
     spreadsheet. Also has functionality to send email when invoked via the
@@ -126,7 +126,7 @@ This repository contains set of files that has python code to perform an
             method that sends alert on a price drop using smtp library and
             connects to gmail server
 
-5.  SearchResults.py
+5.  <b>SearchResults.py</b>
 
         Attributes:
         
@@ -147,7 +147,7 @@ This repository contains set of files that has python code to perform an
             best price for the route. if multiple best prices are available,
             the first one is returned
             
-6.  Flights_Tracked.xlsx
+6.  <b>Flights_Tracked.xlsx</b>
 
        Sample data for one of the routes that is save to the spreadsheet is
         as below. There are multiple sheets within the excel with similar
@@ -163,7 +163,7 @@ This repository contains set of files that has python code to perform an
             0	2020-02-05 21:58:33	   7:00 AM   –   1:20 PM   	 Tap Air Portugal    	 12h 20m   AMS–BOS   	 AMS–BOS 	 1 stop 	       $406    
             0	2020-02-05 22:58:58	   7:00 AM   –   1:20 PM   	 Tap Air Portugal    	 12h 20m   AMS–BOS   	 AMS–BOS 	 1 stop 	       $406    
 
-7.  Programming constructs used:
+7.  <b>Programming constructs used:</b>
 
         1. Panda dataframes, ExcelWriter class, read_excel method, series
         2. collections - dictionaries, lists
@@ -171,15 +171,16 @@ This repository contains set of files that has python code to perform an
         4. if, elif, else
         5. try catch, except. command line input data validation
         6. smtp library
-        7. classes, objects, public and private attributes, methods
-           , constructors and __repr__ for formatting 
+        7. classes, objects, public and private attributes, public and private methods
+           , constructors and __repr__ for displaying objects as string representations 
         8. functions taking and returning values.
         9. MIME Multipart messages
         10. Selenium webdriver for chrome
         11. BeautifulSoup library to parse html. lxml HTML parser.
-        12. divs and html 
+        12. divs and html scraping
         13. regular expressions to validate data. 
         14. string manipulation - split(), len() and strip(). Timestamp
          handling.
         15. search, sort lists and dictionaries.
+        16. unit tests to assert methods in class SearchResults.py
         
