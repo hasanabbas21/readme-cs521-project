@@ -82,24 +82,24 @@ This repository contains set of files that has python code to perform an
 3.  <b>FlightRecord.py</b>, a class that represents a record returned by the search
  results from google flights.
  
-    Flight record to represent a flight search object .
-    Public attributes to store:
-        1. airline_name
-        2. price
-        3. route
-        4. stops
-        5. duration
-        6. timestamp
-        7. departure_time
-        8. arrival_time
+          Flight record to represent a flight search object .
+          Public attributes to store:
+              1. airline_name
+              2. price
+              3. route
+              4. stops
+              5. duration
+              6. timestamp
+              7. departure_time
+              8. arrival_time
 
-    Methods :
-        1. constructor
-            __init__ to initialize the objects
-        2. display_header
-            displays the header names for the flight record object
-        3. __repr__
-            formatted representation of the flight record response objects
+          Methods :
+              1. constructor
+                  __init__ to initialize the objects
+              2. display_header
+                  displays the header names for the flight record object
+              3. __repr__
+                  formatted representation of the flight record response objects
 
             
 4.  <b>SaveResults.py</b>,
@@ -108,21 +108,21 @@ This repository contains set of files that has python code to perform an
     spreadsheet. Also has functionality to send email when invoked. Uses the
     gmail smtp server
 
-    Attributes
-        1. __xls_file
-        2. __server
-        3. __port
+        Attributes
+            1. __xls_file
+            2. __server
+            3. __port
 
-    Methods :
-        1. constructor
-            __init__ to initialize the objects
-        2. get_xls_file
-            returns the excel file used to save the flight search results
-        3. save_xls
-            method that saves the flight search results to the spreadsheet
-        4. send_email_alert
-            method that sends alert on a price drop using smtp library and
-            connects to gmail server
+        Methods :
+            1. constructor
+                __init__ to initialize the objects
+            2. get_xls_file
+                returns the excel file used to save the flight search results
+            3. save_xls
+                method that saves the flight search results to the spreadsheet
+            4. send_email_alert
+                method that sends alert on a price drop using smtp library and
+                connects to gmail server
 
 5.  <b>SearchResults.py</b>
 
