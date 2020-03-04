@@ -9,20 +9,20 @@ This repository contains set of files that has python code to perform an
 1.  Main program (main_program.py) that manages the user interface of the
  project (some of the options as sample below:)
  
-        "Enter the option number you would like to try:\n\n"
-            "1. Run the flight search and save results to the spreadsheet\n"
-            "2. Perform a flight search with user driven parameters\n"
-            "-->  ")
-            
-            1. <enter>
+       1. Run the flight search and save results to the spreadsheet
+       2. Perform a flight search with user driven parameters
+       3. Exit 
+       -->  
+       1. <enter>
                     
-        Enter # of iterations and frequency in milliseconds separated by comma : 1,3600
+        Enter # of iterations and frequency in seconds separated by comma : 1,3600
         
         Enter the option number you would like to try:\n\n"
                     
-           "1. Search flight results by route and date \n"
-           "2. Get the cheapest price by route \n"
-           "--> "
+       1. Run the flight search and save results to the spreadsheet
+       2. Perform a flight search with user driven parameters
+       3. Exit 
+       -->  
            
            1. <enter>        
             
@@ -44,7 +44,7 @@ This repository contains set of files that has python code to perform an
                     "\t 5 -  BCN–BOS \n"
                     "--> "
                     4. <enter>
-2.  google_flights_search_save_program.py which has code for iterating the
+2.  flights_search.py which has code for iterating the
  flight search based on a set schedule and frequency and continuously scan
   the flight prices for the routes coded. 
   It also saves the results in a spreadsheet after each search. Multiple
@@ -56,17 +56,18 @@ This repository contains set of files that has python code to perform an
         search. Invokes methods to save the results to excel.
         
         :param num_of_times: home many times to perform search
-        :param frequency_in_ms: how much time between subsequent searches in
+        :param frequency_in_seconds: how much time between subsequent searches in
         milliseconds
         :param dict_of_routes: routes to perform searches on.
         :return: none
         
         SAMPLE RUN:
         
-        1. Run the flight search and save results to the spreadsheet
-        2. Perform a flight search with user driven parameters
-        -->  1
-        Enter # of iterations and frequency in milliseconds separated by comma :1,15
+       1. Run the flight search and save results to the spreadsheet
+       2. Perform a flight search with user driven parameters
+       3. Exit 
+       -->  
+        Enter # of iterations and frequency in seconds separated by comma :1,15
         city name:  munich
         city name:  zurich
         city name:  amsterdam
