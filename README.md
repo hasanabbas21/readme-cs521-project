@@ -82,8 +82,8 @@ This repository contains set of files that has python code to perform an
 3.  <b>FlightRecord.py</b>, a class that represents a record returned by the search
  results from google flights.
  
-        Attributes:
-        
+    Flight record to represent a flight search object .
+    Public attributes to store:
         1. airline_name
         2. price
         3. route
@@ -93,31 +93,29 @@ This repository contains set of files that has python code to perform an
         7. departure_time
         8. arrival_time
 
-        Methods:
-        
+    Methods :
         1. constructor
             __init__ to initialize the objects
         2. display_header
             displays the header names for the flight record object
         3. __repr__
             formatted representation of the flight record response objects
+
             
 4.  <b>SaveResults.py</b>,
 
     Class that saves the results from the automated flight search into a
-    spreadsheet. Also has functionality to send email when invoked via the
+    spreadsheet. Also has functionality to send email when invoked. Uses the
     gmail smtp server
 
-        Attributes:
-        
+    Attributes
         1. __xls_file
-        2. port
-        3. server
+        2. __server
+        3. __port
 
-        Methods :
-        
+    Methods :
         1. constructor
-           __init__ to initialize the objects
+            __init__ to initialize the objects
         2. get_xls_file
             returns the excel file used to save the flight search results
         3. save_xls
@@ -128,25 +126,24 @@ This repository contains set of files that has python code to perform an
 
 5.  <b>SearchResults.py</b>
 
-        Attributes:
-        
-        1. xls_file
-        -   name of the excel file to use to retrieve the flight records
-        2. flight_records
-        -  list of dataframe objects representing the results of the method call
-        3. lowest_price
+        Private attributes to store:
+        1. __xls_file
+        -  name of the excel file to use to retrieve the flight records
+        2. __flight_records
+        -  list of FlightRecord objects representing the results
+        3. __lowest_price
         -  cheapest price for the route
 
-        Methods  :
+        Private Methods  :
         1. flight_results(route, date_of_flight)
         -  return list of flight prices based on route and date range. It
-            will return multiple results if more than one flight records are
-            present.
-        2. best_price(route))
-        -   searches the stored results in the spreadsheet and returns the
-            best price for the route. if multiple best prices are available,
-            the first one is returned
-            
+           will return multiple results (list of FlightRecord ) if more than one
+           flight records are present.
+        2. best_price(route)
+        -  searches the stored results in the spreadsheet and returns . if
+           multiple best prices are available, the first record (
+           FlightRecord) is returned
+           
 6.  <b>Flights_Tracked.xlsx</b>
 
        Sample data for one of the routes that is save to the spreadsheet is
