@@ -24,7 +24,6 @@ This repository contains set of files that has python code to perform an
                     
            "1. Search flight results by route and date \n"
            "2. Get the cheapest price by route \n"
-           "3. Exit "
            "--> "
            
            1. <enter>        
